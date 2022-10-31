@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim
   labels:
-    app: wordpress-placement-1
+    placement: wordpress-placement-1
 spec:
   accessModes:
     - ReadWriteOnce
