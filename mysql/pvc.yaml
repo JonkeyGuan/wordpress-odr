@@ -4,10 +4,11 @@ metadata:
   name: mysql-pv-claim
   labels:
     app: wordpress
+    placement: wordpress-placement-1
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: ocs-storagecluster-ceph-rbdmirror
+  storageClassName: ocs-storagecluster-ceph-rbd
   resources:
     requests:
       storage: 20Gi
